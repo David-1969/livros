@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Livraria ARTCOM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ====== CABEÇALHO ====== -->
+  <header>
+    <div class="top-bar">
+      <img src="logo.artcom.png" alt="ARTCOM LTDA" class="logo">
+      <nav class="menu-top">
+        <a href="https://david-1969.github.io/Avalie-Agora/">Avalie-nos</a>
+        <a href="https://www.instagram.com/educamaisltda.2006?igsh=MXFrcDZsdnFveDB4NA==">Instagram</a>
+        <a href="#">Sair</a>
+      </nav>
+    </div>
+
+    <nav class="menu-bottom">
+      <a href="#">VOÇÊ ENCONTRARÁ ></a>
+      <a href="#">Literatura BR</a>
+      <a href="#">Literatura EU</a>
+      <a href="#">Literatura ENG</a>
+      <a href="#">Literatura EUA</a>
+    </nav>
+  </header>
+
+  <!-- ====== CONTEÚDO ====== -->
+  <main class="livraria">
+    <section class="titulo-livraria">
+      <h1>LIVRARIA – ARTCOM</h1>
+    </section>
+
+    <!-- FILTRO DE GÊNEROS -->
+    <div class="filtro-generos">
+      <button data-genero="todos" class="ativo">Todos</button>
+      <button data-genero="poesia">Poesia</button>
+      <button data-genero="classico">Clássico</button>
+      <button data-genero="ficcao">Ficção</button>
+      <button data-genero="filosofia">Filosofia</button>
+      <button data-genero="biografico">Biográfico</button>
+      <button data-genero="ensaios">Ensaios</button>
+      <button data-genero="terror">Terror</button>
+      <button data-genero="esoterico">Esotérico</button>
+      <button data-genero="historia">História</button>
+    </div>
+
+    <section class="conteudo-livraria">
+      <!-- LISTA LATERAL -->
+      <aside class="lista-livros">
+        <h2>Lista de Livros</h2>
+        <ul id="lista-livros">
+          <!-- (mesma lista do anterior) -->
+          <li data-livro="hora-estrela">A Hora da Estrela</li>
+          <li data-livro="a-malnascida">A Malnascida</li>
+          <li data-livro="o-uivo">O Uivo e Outros Poemas</li>
+          <li data-livro="do-que-e-feito-uma-garota">Do Que é Feito Uma Garota</li>
+          <li data-livro="zaratustra">Assim Falou Zaratustra</li>
+          <li data-livro="pe-na-estrada">Pé na Estrada</li>
+          <li data-livro="a-pedra-filosofal">A Pedra Filosofal</li>
+          <li data-livro="prazeres-perigosos">Prazeres Perigosos</li>
+          <li data-livro="almoco-nu">Almoço Nu</li>
+          <li data-livro="rei-arthur">Rei Arthur e os Cavaleiros</li>
+          <li data-livro="bob-dylan">Bob Dylan: Letras</li>
+          <li data-livro="a-vegetariana">A Vegetariana</li>
+          <li data-livro="walden">Walden ou A Vida nos Bosques</li>
+          <li data-livro="venus-peles">A Vênus das Peles</li>
+          <li data-livro="os-lusiadas">Os Lusíadas</li>
+          <li data-livro="casamento-ceu-inverno">O Casamento do Céu e do Inverno</li>
+          <li data-livro="big-sur">Big Sur</li>
+          <li data-livro="folhas-relvas">Folhas e Relvas</li>
+          <li data-livro="a-estrada">A Estrada</li>
+          <li data-livro="por-que-criancas-matam">Por Que Crianças Matam</li>
+          <li data-livro="noites-brancas">Noites Brancas</li>
+          <li data-livro="matrimonio-ceu-inferno">Matrimônio do Céu e do Inferno</li>
+          <li data-livro="o-alquimista">O Alquimista</li>
+          <li data-livro="bukowski-essencial">Bukowski: Essencial_Poesia</li>
+          <li data-livro="o-estrangeiro">O Estrangeiro</li>
+          <li data-livro="retrato-dorian">O Retrato de Dorian Gray</li>
+          <li data-livro="wicca-para-iniciantes">Wicca para Iniciantes</li>
+          <li data-livro="astrologia-oculta">Astrologia Oculto no Livro Vermelho</li>
+          <li data-livro="enterrem-coracao">Enterrem Meu Coração na Curva do Rio</li>
+          <li data-livro="tristessa">Tristessa</li>
+           <li data-livro="como-eu-era-antes">Como Eu Era Antes de Você</li>
+    <li data-livro="crime-castigo">Crime e Castigo</li>
+    <li data-livro="cronicas-japao">Crônicas do Japão</li>
+    <li data-livro="culpa-estrelas">A Culpa É das Estrelas</li>
+    <li data-livro="dom-casmurro">Dom Casmurro</li>
+    <li data-livro="dracula">Drácula</li>
+    <li data-livro="antologia-poetica">Antologia Poética</li>
+    <li data-livro="velhice-saudavel">Velhice Saudável</li>
+    <li data-livro="it-a-coisa">It – A Coisa</li>
+    <li data-livro="rosa-do-povo">A Rosa do Povo</li>
+    <li data-livro="historia-americas">História das Américas</li>
+    <li data-livro="inferno-divina-comedia">Inferno (A Divina Comédia)</li>
+    <li data-livro="iracema">Iracema</li>
+    <li data-livro="liberdade-ser-mulher">Liberdade de Ser Mulher</li>
+    <li data-livro="metamorfose">A Metamorfose</li>
+    <li data-livro="odisseia">Odisseia</li>
+    <li data-livro="o-espelho">O Espelho</li>
+    <li data-livro="herdeiros-nietzsche">Os Herdeiros de Nietzsche</li>
+    <li data-livro="para-todos-garotos">Para Todos os Garotos Que Já Amei</li>
+    <li data-livro="peter-pan">Peter Pan & Wendy</li>
+    <li data-livro="quando-mulheres-atiram">Quando as Mulheres Atiram</li>
+    <li data-livro="reinações-narizinho">Reinações de Narizinho</li>
+    <li data-livro="revolucao-bichos">A Revolução dos Bichos</li>
+    <li data-livro="uma-lagrima-mulher">Uma Lágrima de Mulher</li>
+    <li data-livro="vidas-secas">Vidas Secas</li>
+    <li data-livro="vinte-mil-leguas">Vinte Mil Léguas Submarinas</li>
+    <li data-livro="republica">A República</li>
+    <li data-livro="volta-ao-mundo">A Volta ao Mundo em 80 Dias</li>
+    <li data-livro="cartomante">A Cartomante</li>
+    <li data-livro="alice-maravilhas">Alice no País das Maravilhas</li>
+        </ul>
+      </aside>
+
+      <!-- GRADE DE LIVROS -->
+      <section class="grade-livros" id="grade-livros">
+        <!-- JS vai preencher aqui -->
+      </section>
+
+      <!-- RESUMO -->
+      <aside class="resumo-livro" id="resumo-livro">
+        <h2>Resumo</h2>
+        <p>Clique em um livro para ver seu resumo.</p>
+      </aside>
+    </section>
+  </main>
+ <!-- ====== RODAPÉ ====== -->
+  <footer>
+    © 2025 ARTCOM – LTDA | Projeto Cultural Brasileiro
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

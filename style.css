@@ -1,0 +1,207 @@
+
+/* ======== ESTILO GERAL ======== */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: #111;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+}
+
+
+/* ===== MENU ===== */
+.menu-top a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 50px;
+  font-family: 'Impact', sans-serif; /* fonte forte e marcante */
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s, transform 0.2s;
+  padding-left: 30px;
+}
+
+.menu-top a:hover {
+  color: #d1d1d1;
+  transform: scale(1.05);
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #000;
+  padding: 8px 0;
+}
+
+.menu-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-bottom a:hover {
+  color: #d1d1d1;
+}
+
+/* ===== LIVRARIA ===== */
+.livraria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.titulo-livraria h1 {
+  font-family: 'Cinzel', serif;
+  margin: 30px 0 10px;
+  text-align: center;
+}
+
+.filtro-generos {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtro-generos button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.filtro-generos button.ativo,
+.filtro-generos button:hover {
+  background-color: #555;
+}
+
+.conteudo-livraria {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+}
+
+/* Lista lateral */
+.lista-livros {
+  flex: 1;
+  min-width: 220px;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.lista-livros h2 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 10px;
+}
+
+.lista-livros li {
+  list-style: none;
+  padding: 6px 4px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s;
+}
+
+.lista-livros li:hover {
+  background: #eaeaea;
+}
+
+.lista-livros li.selecionado {
+  background: #dcdcdc;
+  font-weight: bold;
+}
+
+/* Grade de livros */
+.grade-livros {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.livro {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.livro:hover {
+  transform: scale(1.05);
+}
+
+.livro img {
+  width: 120px;
+  height: 180px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Resumo fixo e rolável */
+.resumo-livro {
+  flex: 1;
+  min-width: 250px;
+  max-height: 600px;
+  overflow-y: auto;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  line-height: 1.5;
+  position: sticky;
+  top: 20px;
+}
+
+.resumo-livro h2 {
+  font-family: 'Cinzel', serif;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .conteudo-livraria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resumo-livro {
+    max-height: none;
+    width: 100%;
+    position: relative;
+  }
+}
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
